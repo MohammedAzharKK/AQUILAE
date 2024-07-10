@@ -37,7 +37,7 @@ class SplashScreen extends StatelessWidget {
                 Expanded(
                   child: SplashScreenView(
                     navigateWhere: true,
-                    navigateRoute: const FirstPage(),
+                    navigateRoute: FirstPage(),
                     text: WavyAnimatedText(
                       " Aquilae Airways",
                       textStyle: const TextStyle(
