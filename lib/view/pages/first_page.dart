@@ -1,3 +1,4 @@
+import 'package:aqualae_apk/view/pages/boarding_pass_page.dart';
 import 'package:flutter/material.dart';
 
 class FirstPage extends StatelessWidget {
@@ -5,6 +6,20 @@ class FirstPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+          ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const BoardingPassPage(),
+                    ));
+              },
+              child: const Text("boarding pass page"))
+        ],
+      ),
+    );
   }
 }
